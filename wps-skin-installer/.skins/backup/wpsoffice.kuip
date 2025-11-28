@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<resource mode="mix">
+		<icon type="png">
+			<path path=":/icons/16x16"/>
+			<path path=":/icons/24x24"/>
+			<path path=":/icons/other"/>
+		</icon>
+		<icon type="svg">
+			<path path=":/icons_svg/12x12"/>
+			<path path=":/icons_svg/14x14"/>
+			<path path=":/icons_svg/13x13"/>
+			<path path=":/icons_svg/16x16"/>
+			<path path=":/icons_svg/24x24"/>
+			<path path=":/icons_svg/30x30"/>
+			<path path=":/icons_svg/32x32"/>
+			<path path=":/icons_svg/40x40"/>
+			<path path=":/icons_svg/48x48"/>
+			<path path=":/icons_svg/64x64"/>
+			<path path=":/icons_svg/other"/>
+			<path custompath="default/wpsoffice/icons_svg/30x30"/>
+			<path custompath="default/wpsoffice/icons_svg/24x24"/>
+			<path custompath="default/wpsoffice/icons_svg/16x16"/>
+		</icon>
+	</resource>
+	<theme>
+		<style class="KPromeApplication">
+			<color name="icon-disable" value="#000000"/><!--窗口按钮禁用，需结合disable图标-->
+		</style>
+		<style class="KPromeMinButton">
+			<color name="background" value="#ffffff00"/>
+			<color name="background-hover" value="#00000019"/>
+			<color name="background-down" value="#00000031"/>
+		</style>
+		<style class="KPromeRestoreMaxButton">
+			<color name="background" value="#ffffff00"/>
+			<color name="background-hover" value="#00000019"/>
+			<color name="background-down" value="#00000031"/>
+		</style>
+		<style class="KPromeHeaderBar">
+			<hint name="spacing" value="10"/>
+			<hint name="spacing-singleline" value="1"/>
+			<hint name="marginLeft" value="-3"/>
+			<linearGradient name="background" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#dedfe0"/>
+				<color position="1" value="#d4d5d6"/> 
+			</linearGradient>
+			<linearGradient name="separator" spread="pad" start="0,0" end="0,1"><!--标题栏工作区与昵称分割线-->
+				<color position="0" value="#ffffff00"/>
+				<color position="0.33" value="#A6A6A7"/>
+				<color position="0.66" value="#A6A6A7"/>
+				<color position="1" value="#ffffff00"/>
+			</linearGradient>
+		</style>
+		<style class="KPromeCloseButton">
+			<color name="background" value="#ffffff00"/>
+			<color name="background-hover" value="#f0604d"/>
+			<color name="background-down" value="#cc5141"/>
+			<hint name="borderRadius" value="0"/>
+		</style>
+		<style class="KPromeTab">
+			<color name="background" value="#0000000d"/>
+			<color name="background-hover" value="#00000026"/>
+			<color name="background-down" value="#f4f4f4"/>
+			<color name="text" value="#000000b3"/>
+			<color name="text-hover" value="#000000b3"/>
+			<color name="text-down" value="#000000cc"/>
+			<color name="shadow" value="#00000033"/>
+			<hint name="shadow" value="1"/>
+			<hint name="roundFlags" value="3"/>
+			<hint name="roundFlags-down" value="195"/>
+		</style>
+		<style class="KPromeTab-StartPage" base="KPromeTab">
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#000000cc"/>
+			<color name="background" value="#0038994d"/>
+			<color name="background-hover" value="#00389980"/>
+			<color name="background-down" value="#f4f4f4"/>
+		</style>
+		<style class="KPromeTab-StartPage-Wps" base="KPromeTab">
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#5087e5"/>
+			<color name="background" value="#527ecc99"/>
+			<color name="background-hover" value="#527ecccc"/>
+			<color name="background-down" value="#f4f4f4"/>
+		</style>
+		<style class="KPromeTab-StartPage-Et" base="KPromeTab">
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#42a642"/>
+			<color name="background" value="#35a63599"/>
+			<color name="background-hover" value="#35a635cc"/>
+			<color name="background-down" value="#f4f4f4"/>
+		</style>
+		<style class="KPromeTab-StartPage-Wpp" base="KPromeTab">
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#e56d39"/>
+			<color name="background" value="#fa511e99"/>
+			<color name="background-hover" value="#fa511ecc"/>
+			<color name="background-down" value="#f4f4f4"/>
+		</style>
+		<style class="KPromeTab-StartPage-Pdf" base="KPromeTab">
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#d94748"/>
+			<color name="background" value="#eb3b3b99"/>
+			<color name="background-hover" value="#eb3b3bcc"/>
+			<color name="background-down" value="#f4f4f4"/>
+		</style>
+		<style class="KPromeTab-Wps" base="KPromeTab">
+			<color name="text-down" value="#5087e5"/>
+		</style>
+		<style class="KPromeTab-Wpp" base="KPromeTab">
+			<color name="text-down" value="#e56d39"/>
+		</style>
+		<style class="KPromeTab-Et" base="KPromeTab">
+			<color name="text-down" value="#42a642"/>
+		</style>
+		<style class="KPromeTab-Pdf" base="KPromeTab">
+			<color name="text-down" value="#d94748"/>
+		</style>
+		<style class="KPromeTab-Lock" base="KPromeTab">
+			<color name="background" value="#0000001f"/>
+		</style>
+		<style class="KPromeTab-Lock-Wps" base="KPromeTab-Lock">
+			<color name="text-down" value="#396cbf"/>
+		</style>
+		<style class="KPromeTab-Lock-Wpp" base="KPromeTab-Lock">
+			<color name="text-down" value="#d96416"/>
+		</style>
+		<style class="KPromeTab-Lock-Et" base="KPromeTab-Lock">
+			<color name="text-down" value="#388d5c"/>
+		</style>
+		<style class="KPromeTab-Lock-Pdf" base="KPromeTab-Lock">
+			<color name="text-down" value="#d94748"/>
+		</style>
+		<style class="KPromeNewTabButton">
+			<color name="text" value="#000000b2"/>
+			<color name="text-hover" value="#000000b2"/>
+			<color name="text-down" value="#000000b2"/>
+		</style>
+		<style class="KWorkAreaButton">
+			<color name="background-hover" value="#0000001a"/>
+			<color name="background-down" value="#00000040"/>
+			<hint name="roundFlags" value="15"/>
+			<hint name="borderRadius" value="3"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KPromeHeaderAvatar">
+			<color name="background-hover" value="#0000001a"/>
+			<color name="background-down" value="#00000040"/>
+			<hint name="borderRadius" value="10"/>
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000080"/>
+			<color name="text-hover" value="#00000080"/>
+		</style>
+		<style class="KPromeHeaderAvatar-Unlogin">
+			<color name="background" value="#D96D62"/><!--点击登录背景色-->
+			<color name="background-hover" value="#F27A6D"/><!--点击登录悬停背景色-->
+			<color name="background-down" value="#CC675C"/><!--点击登录按下背景色-->
+			<color name="border" value="#C26158"/><!--边框颜色-->
+			<color name="border-hover" value="#D96D61"/><!--边框悬停颜色-->
+			<color name="border-down" value="#B75C52"/><!--边框按下颜色-->
+			<color name="text" value="#ffffff"/><!--点击登录文字色-->
+			<color name="text-hover" value="#ffffff"/><!--点击登录文字悬停色-->
+			<color name="text-down" value="#ffffff"/><!--点击登录文字按下色-->
+			<hint name="borderRadius" value="10"/><!--背景圆角-->
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KScrollWidgetArrow">
+			<color name="background" value="#00000000"/>
+			<color name="background-hover" value="#fbfbfbcc"/>
+			<color name="background-down" value="#fbfbfbcc"/>
+			<color name="border" value="#00000000"/>
+			<color name="border-hover" value="#c4c4c4"/>
+			<color name="border-down" value="#c4c4c4"/>
+			<hint name="borderRadius" value="3"/>
+		</style>
+		<style class="KPromeMenuWidget">
+			<color name="background" value="#FFFFFF" />
+			<color name="border" value="#dddddd"/>
+			<color name="inner-border" value="#ffffff"/>
+			<linearGradient name="leader" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+			<color name="separator" value="#eeeeee"/>
+			<color name="text" value="#424242"/>
+			<color name="text-disable" value="#aaaaaa"/>
+			<color name="spliteline" value="#e2e4e7"/>
+			<color name="red-point" value="#cc4747"/>
+			<color name="text-red-point" value="#f2733d"/>
+			<hint name="radius-red-point" value="3"/>
+			<hint name="offset-x-red-point" value="1"/>
+			<hint name="offset-y-red-point" value="1"/>
+		</style>
+		<style class="KMenuWidgetLayoutItem" base="button">
+			<color name="border-ruler" value="#6b9fff"/>
+			<color name="content-disable" value="#AFB9C3"/>
+			<color name="content-active" value="#fff2d6"/>
+			<color name="border-down" value="#b2cced"/>
+			<color name="border-hover" value="#deeafa"/>
+			<linearGradient name="background-down" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#b2cced"/>
+			</linearGradient>
+			<linearGradient name="background-hover" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#0000000f"/>
+			</linearGradient>
+			<linearGradient name="background-check" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#00000000"/>
+			</linearGradient>
+			<linearGradient name="background-selected" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#0000001a"/>
+			</linearGradient>
+			<color name="separator" value="#eeeeee"/>
+			<color name="text" value="#000000"/>
+		</style>
+		<style class="KPromeWindowLoadingWidget">
+			<linearGradient name="background" spread="pad" start="0,0" end="0,1">
+				<color position="0" value="#f4f4f4"/>
+				
+			</linearGradient>
+			<color name="text" value="#bbbbbb"/>
+			<font name="text" pixelSize="12"/>
+			<color name="fileNameText" value="#424242"/>
+			<font name="fileNameText" pixelSize="14"/>
+			<color name="errorText" value="#424242"/>
+			<font name="errorText" pixelSize="12"/>
+		</style>
+		<style class="KPromeWindowLoadingWidgetV2" base="KPromeWindowLoadingWidget"/>
+		<style class="KPromeWindowBlankWidget" base="KPromeWindowLoadingWidget">
+		</style>
+		<style class="KPromeCrashWidget" base="KPromeWindowLoadingWidget">
+		</style>
+		<style class="KPromeWindowCrashCenterWidget" base="KPromeCrashWidget">
+		</style>
+		<style class="KPromeNotFoundWidget" base="KPromeWindowLoadingWidget">
+		</style>
+		<style class="KPromeNotFoundFileCenterWidget" base="KPromeNotFoundWidget">
+		</style>
+		<style class="KPromeMainWindow">
+			<hint name="disableDrawBackground" value="1" private="true"/>
+			<color name="border-linux" value="#d8d8d8"/>
+		</style>
+		<style class="KPromeMainWindow-Opacity">
+			<hint name="disableDrawBackground" value="1" private="true"/>
+		</style>
+		<style class="KPromeDocTabStatusPane">
+			<color name="background" value="#ffffff"/>
+			<color name="border" value="#c4c4c4"/>
+		</style>
+		<style class="KPromeProcessonTabStatusPane">
+			<color name="background" value="#ffffff"/>
+			<color name="border" value="#c4c4c4"/>
+		</style>
+		<style class="KPromeIconButton">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<!--Dialog-->		
+		<style class="KPromeEnforcedUpdate" >
+			<font name="font-title" pixelSize="22"/>
+			<color name="text-imminent-title" value="#FD7D00"/>
+			<color name="text-troubled-title" value="#FD2900"/>
+			<font name="font-info" pixelSize="14"/>
+			<color name="text-info" value="#74777A"/>
+		</style>
+		<style class="KPromeOpenSelector" >
+			<font name="font-title" pixelSize="22"/>
+			<color name="text-title" value="#3a81ec"/>
+			<font name="font-filename" pixelSize="14"/>
+			<color name="text-filename" value="#666666"/>
+			<font name="font-selitem" pixelSize="14"/>
+			<color name="text-selitem" value="#2b2b2b"/>
+		</style>
+		<style class="KUnloginExitDlg" >
+			<font name="font-title" pixelSize="22"/>
+			<color name="text-title" value="#FD2900"/>
+			<font name="font-info" pixelSize="14"/>
+			<color name="text-info" value="#74777A"/>
+		</style>
+		<style class="KPromeMessageContentDlg" >
+			<font name="title" pointSize="15"/>
+			<font name="text" pointSize="10.25"/>
+			<color name="title" value="#5087e5"/>
+			<color name="title-icon" value="#000000b2"/>
+			<color name="text" value="#666666"/>
+			<color name="text-option" value="#999999"/>
+			<color name="background" value="#ffffff"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KPromeMessageContentDlgButton">
+			<font name="text" pointSize="10"/>
+			<color name="text" value="#666666"/>
+			<color name="text-hover" value="#666666"/>
+			<color name="text-down" value="#333333"/>
+			<color name="text-disable" value="#00000033"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#f2f2f2"/>
+			<color name="background-down" value="#e5e5e5"/>
+			<color name="background-disable" value="#ffffff"/>
+			<color name="border" value="#cccccc"/>
+			<color name="border-hover" value="#b2b2b2"/>
+			<color name="border-down" value="#999999"/>
+			<color name="border-disable" value="#e5e5e5"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KPromeMessageContentDlgDefButton">
+			<font name="text" pointSize="10"/>
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#ffffff"/>
+			<color name="text-disable" value="#b2b2b2"/>
+			<color name="background" value="#5087e5"/>
+			<color name="background-hover" value="#7cabf2"/>
+			<color name="background-down" value="#3966bf"/>
+			<color name="background-disable" value="#e5e5e5"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeDlg" >
+			<color name="background" value="#ffffff"/>
+			<hint name="borderRadius" value="6"/>
+		</style>
+		<style class="KPromeRoamingIconButton">
+			<font name="text" pointSize="10.5"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeNavButton" base="KPromeRoamingIconButton">
+			<color name="text" value="#00000059"/>
+			<color name="text-hover" value="#7cabf2"/>
+			<color name="text-down" value="#3966bf"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeIconLabel" base="KPromeRoamingIconButton">
+			<color name="text" value="#4d4d4d"/>
+			<color name="text-hover" value="#4d4d4d"/>
+			<color name="text-down" value="#4d4d4d"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeClickLabel" base="KPromeRoamingIconButton">
+			<color name="text" value="#3a88ec"/>
+			<color name="text-hover" value="#7cabf2"/>
+			<color name="text-down" value="#3966bf"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeLowerClickLabel" base="KPromeRoamingModeNoticeClickLabel">
+			<font name="text" pointSize="9"/>
+		</style>
+		<style class="KPromeRoamingModeNoticeCtrlButton" base="KPromeMessageContentDlgDefButton">
+		</style>
+		<!--KPromeStartPage-->
+		<style class="KPromeStartPage">
+			<color name="background" value="#f4f4f4"/>
+			<color name="separator" value="#eeeeee"/>
+			<hint name="separator-width" value="1"/>
+		</style>
+		<style class="KFolderArea">
+			<color name="background" value="#ffffff"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KFileListListView">
+			<font name="text" pointSize="10.5"/>
+			<color name="text-disable" value="#00000077"/>
+		</style>
+		<style class="KFileListCloudLoginWidget">
+			<color name="title-text" value="#00000099"/>
+			<font name="title" pointSize="18"/>
+		</style>
+		<style class="KFileListCloudIntroWidget">
+			<color name="text" value="#424242"/>
+			<font name="text" pixelSize="14"/>
+		</style>
+		<style class="KPromeStartPageListView">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#000000e6"/>
+			<color name="text-hover" value="#000000e6"/>
+			<color name="background-hover" value="#0000000f"/>
+			<hint name="borderRadius" value="2"/>
+		</style>
+		<style class="KCommonSearchDelegate" base="KPromeStartPageListView">
+			<hint name="borderRadius" value="0"/>
+		</style>
+		<style class="KDocerListDelegate" base="KCommonSearchDelegate">
+			<hint name="borderRadius" value="0"/>
+			<color name="icon-border" value="#E8E8E8"/>
+			<color name="text" value="#999999"/>
+		</style>
+		<style class="KDocerListDelegate-Button">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KCommonSearchDelegate-Button">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KDocumentListDelegate" base="KCommonSearchDelegate">
+			<font name="text" pointSize="10.5"/>
+			<font name="text-path" pointSize="9"/>
+			<color name="text-path" value="#00000066"/>
+			<color name="text-path-hover" value="#00000066"/>
+		</style>
+		<style class="KDocumentListDelegate-Button" base="KCommonSearchDelegate-Button">
+		</style>
+		<style class="KContentSearchListDelegate" base="KCommonSearchDelegate">
+			<font name="text" pointSize="10.5"/>
+			<font name="text-path" pointSize="9"/>
+			<color name="text-path" value="#00000066"/>
+			<color name="text-path-hover" value="#00000066"/>
+			<font name="text-content" pointSize="9"/>
+			<color name="text-content" value="#00000099"/>
+			<color name="text-content-highlight-background" value="#FDF5D3"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#eeeeee"/>
+			<color name="background-down" value="#e5e5e5"/>
+			<color name="border-path" value="#E6E6E6"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KContentSearchHighlighter" base="KContentSearchListDelegate">
+		</style>
+		<style class="KContentHighlighter" base="KContentSearchListDelegate">
+		</style>
+		<style class="KContentSearchListDelegate-Button" base="KCommonSearchDelegate-Button">
+		</style>
+		<style class="KxCommonSearchListWidget">
+			<color name="title" value="#00000066"/>
+			<color name="title-button" value="#00000066"/>
+		</style>
+		<style class="KDisplayAllResultBtn">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#666666"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#00000005"/>
+			<color name="background-down" value="#0000000d"/>
+			<color name="border" value="#cccccc"/>
+			<color name="border-hover" value="#0000004d"/>
+			<color name="border-down" value="#00000066"/>
+			<hint name="borderWidth" value="1"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="SearchActionBtn">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#ffffff"/>
+			<color name="text-disable" value="#b2b2b2"/>
+			<color name="background" value="#5087e5"/>
+			<color name="background-hover" value="#7cabf2"/>
+			<color name="background-down" value="#3966bf"/>
+			<color name="background-disable" value="#e5e5e5"/>
+			<hint name="borderWidth" value="0"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="OtherSearchTipsWidget">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#999999"/>
+			<color name="line" value="#00000033"/>
+		</style>
+		<style class="KRecordListWidget" base="KxCommonSearchListWidget">
+			<color name="title" value="#424242"/>
+			<color name="title-button" value="#00000066"/>
+		</style>
+		<style class="KDocumentListWidget" base="KxCommonSearchListWidget">
+			<color name="loadingtips" value="#9B9B9C"/>
+			<color name="result-button" value="#9B9B9C"/>
+		</style>
+		<style class="KDocerSearchListWidget">
+			<color name="title" value="#00000066"/>
+			<color name="title-button" value="#00000066"/>
+		</style>
+		<style class="KCommonSearchResultWidget" base="KxCommonSearchListWidget">
+			<color name="loadingtips" value="#9B9B9C"/>
+			<color name="result-button" value="#9B9B9C"/>
+		</style>
+		<style class="KTitleWidget">
+			<color name="background" value="#f5f5f5"/>
+		</style>
+		<style class="KTitleWidget-Title">
+			<color name="text" value="#00000066"/>
+		</style>
+		<style class="KTitleWidget-Expand">
+			<color name="background" value="#ffffff"/>
+		</style>
+		<style class="KSearchResultTabTitleWidget" base="KTitleWidget">
+			<color name="background" value="#f5f5f5"/>
+		</style>
+		<style class="KSearchResultTabButton">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000066"/>
+			<color name="text-hover" value="#00000099"/>
+			<color name="background" value="#00000000"/>
+			<color name="background-selected" value="#ffffff"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KMsgListViewDelegate">
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#ffffff"/>
+			<color name="border-fixed" value="#ffffff"/>
+			<color name="border-fixed-hover" value="#00000026"/>
+			<hint name="borderWidth" value="1"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="img-borderRadius" value="4"/>
+			<color name="img-background" value="#999999"/>
+			<font name="text-group" pointSize="9"/>
+			<color name="text-group" value="#999999"/>
+			<color name="text-group-hover" value="#999999"/>
+			<font name="text-title" pointSize="10.5"/>
+			<font name="text-title-hover" pointSize="10.5"/>
+			<color name="text-title" value="#424242"/>
+			<color name="text-title-hover" value="#424242"/>
+			<font name="text-body" pointSize="9"/>
+			<color name="text-body" value="#999999"/>
+			<color name="text-body-hover" value="#999999"/>
+			<font name="text-time" pointSize="9"/>
+			<color name="text-time" value="#cccccc"/>
+			<color name="text-time-hover" value="#cccccc"/>
+		</style>
+		<style class="KMsgListViewDelegate-Button">
+			<hint name="borderRadius" value="2"/>
+			<color name="background-hover" value="#0000000f"/>
+		</style>
+		<style class="KAbstractFileModeDelegate">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000099"/>
+			<color name="text-disable" value="#0000004d"/>
+			<font name="text-name" pointSize="9"/>
+			<color name="text-name" value="#000000cc"/>
+			<color name="text-name-disable" value="#00000066"/>
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<color name="progress-border" value="#00000099"/>
+			<color name="progress-background" value="#0000001B"/>
+			<color name="progress-forecolor" value="#5087e5"/>
+			<color name="thumbnail-border" value="#cccccc"/>
+			<color name="thumbnail-background" value="#ffffff"/>
+			<color name="thumbnail-border-disable" value="#dddddd"/>
+			<color name="thumbnail-background-disable" value="#fbfbfb"/>
+			<hint name="markinfo-mask" value="1"/>
+			<hint name="thumbnail-radius" value="2"/>
+			<hint name="borderRadius" value="2"/>
+		</style>
+		<style class="KAbstractFileModeDelegate-Button">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KLocationListDelegate" base="KAbstractFileModeDelegate">
+			<font name="title" pointSize="10.5"/>
+			<font name="text" pointSize="9.75"/>
+			<color name="text-name" value="#000000cc"/>
+			<color name="text-name-disable" value="#aaaaaa"/>
+			<color name="separator" value="#f2f2f2"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KPlainModeDelegate" base="KAbstractFileModeDelegate">
+			<font name="title" pointSize="11"/>
+			<color name="text-name-disable" value="#0000004d"/>
+			<hint name="borderRadius" value="5"/>
+		</style>
+		<style class="KDetailModeDelegate" base="KAbstractFileModeDelegate">
+			<hint name="borderRadius" value="5"/>
+		</style>
+		<style class="KTilesModeDelegate" base="KAbstractFileModeDelegate">
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#eeeeee"/>
+			<color name="background-down" value="#e5e5e5"/>
+			<color name="background-selected" value="#e5e5e5"/>
+			<color name="border-fixed" value="#eeeeee" />
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KCoverModeDelegate" base="KAbstractFileModeDelegate">
+			<font name="title" pointSize="11"/>
+			<font name="text" pointSize="9.95"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#f0f0f0"/>
+			<color name="background-down" value="#e5e5e5"/>
+			<color name="background-selected" value="#e5e5e5"/>
+			<color name="border-fixed" value="#e4e4e4" />
+			<color name="border-fixed-hover" value="#dddddd" />
+			<color name="thumbnail-border" value="#f4f4f4"/>
+			<color name="thumbnail-foreground" value="#0000000a"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KCoverModeDelegate-PinButton" base="KAbstractFileModeDelegate-Button">
+			<color name="background" value="#eeeeee99"/>
+			<hint name="borderRadius" value="12"/>
+		</style>
+		<style class="KLocationNavigationBar">
+			<color name="border" value="#e8e8e8"/>
+			<color name="border-down" value="#aaaaaa"/>
+			<hint name="borderRadius" value="5"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-down" value="#ffffff"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KFilterOptionToolBar">
+			<color name="border" value="#d4d4d4"/>
+			<color name="border-down" value="#aaaaaa"/>
+			<hint name="borderRadius" value="5"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-down" value="#ffffff"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KItemRenamingEditor">
+			<color name="border" value="#aaaaaa"/>
+			<color name="border-selected" value="#cc4747"/>
+			<hint name="borderRadius" value="4"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-selected" value="#fff1f1"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KFileListDetailHeaderView">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#666666"/>
+			<color name="text-hover" value="#666666"/>
+			<color name="background" value="#0000000a"/>
+			<hint name="borderRadius" value="2"/>
+		</style>
+		<style class="KFileListOpenSelectDialog" >
+			<font name="font-title" pixelSize="22"/>
+			<color name="text-title" value="#3a81ec"/>
+			<color name="text-name" value="#4c4c4c"/>
+			<color name="text-path" value="#00000042"/>
+			<hint name="borderRadius" value="6"/>
+			<color name="background" value="#ffffff"/>
+		</style>
+		<style class="KOpenWayItemWidget">
+			<hint name="borderRadius" value="4"/>
+			<color name="background" value="#0000000d"/>
+			<color name="text-title" value="#4c4c4c"/>
+			<color name="text-detail" value="#00000042"/>
+		</style>
+		<style class="KMsgCenterWidget">
+			<color name="background" value="#f4f4f4"/>
+		</style>
+		<style class="KEntryWidget">
+			<font name="text" pointSize="9.75"/>
+			<color name="text" value="#000000cc"/>
+			<color name="text-hover" value="#000000cc"/>
+			<font name="text-component" pointSize="9.75"/>
+			<color name="text-component" value="#5087e5"/>
+			<color name="text-component-hover" value="#5087e5"/>
+			<color name="text-component-down" value="#5087e5"/>
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KAppCenterEntryWidget" base="KEntryWidget">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#999999"/>
+			<color name="text-hover" value="#999999"/>
+			<color name="text-down" value="#999999"/>
+			<color name="text-disable" value="#999999"/>
+		</style>
+		<style class="KTitleEntryWidget" base="KAppCenterEntryWidget"/>
+		<style class="KEntryExtendWidget" base="KEntryWidget">
+			<hint name="roundFlags" value="15"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KProxyEntryWidget" base="KEntryWidget">
+		</style>
+		<style class="KCmdUrlEntry" base="KEntryWidget">
+			<font name="text-icon" pointSize="10.5"/>
+			<font name="text-icon" bold="true"/>
+			<color name="text-icon" value="#ffffff"/>
+			<color name="background-icon" value="#8f9bb2"/>
+		</style>
+		<style class="KIconButton">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#000000cc"/>
+			<color name="text-hover" value="#000000cc"/>
+			<color name="text-down" value="#000000cc"/>
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="background-selected" value="#00000019"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KTextButton" base="KIconButton">
+		</style>
+		<style class="KStaticTextButton" base="KTextButton">
+			<font name="text" pointSize="10.2"/>
+			<color name="background-hover" value="#00000000"/>
+			<color name="background-down" value="#00000000"/>
+			<color name="background-selected" value="#00000000"/>
+		</style>
+		<style class="KStaticSecTextButton" base="KStaticTextButton">
+			<font name="text" pointSize="9.2"/>
+			<color name="text" value="#00000099"/>
+			<color name="text-hover" value="#00000099"/>
+			<color name="text-down" value="#00000099"/>
+		</style>
+		<style class="FlatIconButton">
+			<color name="text" value="#808080"/>
+			<color name="text-hover" value="#666666"/>
+		</style>
+		<style class="KRoundFlatButton">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-selected" value="#0000001a"/>
+			<hint name="borderRadius" value="12"/>
+		</style>
+		<style class="KFilterIconButton" base="KIconButton">
+			<color name="background-selected" value="#5f90e5"/>
+			<color name="text-selected" value="#ffffff"/>
+		</style>
+		<style class="KListFilterTitle">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000099"/>
+			<color name="text-hover" value="#00000099"/>
+			<color name="text-down" value="#00000099"/>
+		</style>
+		<style class="KListFilterIconTextButton" base="KIconButton">
+			<color name="background-hover" value="#f0f0f0"/>
+			<color name="background-down" value="#edf3fc"/>
+			<color name="background-selected" value="#edf3fc"/>
+			<color name="border-hover" value="#dfdfdf"/>
+			<color name="border-down" value="#d1dff8"/>
+			<color name="border-selected" value="#d1dff8"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KListFilterTextButton" base="KTextButton">
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#f0f0f0"/>
+			<color name="background-down" value="#edf3fc"/>
+			<color name="background-selected" value="#edf3fc"/>
+			<color name="border" value="#ebebeb"/>
+			<color name="border-hover" value="#dfdfdf"/>
+			<color name="border-down" value="#d1dff8"/>
+			<color name="border-selected" value="#d1dff8"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KSortButton" base="KListFilterTextButton">
+		</style>
+		<style class="KMarkColorButton">
+			<color name="background-hover" value="#f0f0f0"/>
+			<color name="background-down" value="#e3ecfa"/>
+			<color name="background-selected" value="#e3ecfa"/>
+			<color name="border-hover" value="#e2e2e2"/>
+			<color name="border-down" value="#d3e1f8"/>
+			<color name="border-selected" value="#d3e1f8"/>
+			<hint name="borderRadius" value="12"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KLocNavButton" base="KTextButton">
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KLocConnectorButton" base="KIconButton">
+			<color name="background-hover" value="#00000000"/>
+			<color name="background-down" value="#00000000"/>
+			<color name="background-selected" value="#00000000"/>
+		</style>
+		<style class="KLocToolButton" base="KIconButton">
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KLocSpaceButton" base="KIconButton">
+			<color name="background-hover" value="#00000000"/>
+			<color name="background-down" value="#00000000"/>
+			<color name="background-selected" value="#00000000"/>
+		</style>
+		<style class="KFilterOptionToolText">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#33333399"/>
+			<color name="text-hover" value="#33333399"/>
+			<color name="text-down" value="#33333399"/>
+		</style>
+		<style class="KFilterOptionToolTextButton" base="KTextButton">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#333333"/>
+			<color name="text-hover" value="#333333"/>
+			<color name="text-down" value="#333333"/>
+			<color name="background" value="#f4f4f4"/>
+			<color name="background-hover" value="#ff5500"/>
+			<color name="background-down" value="#0066cc"/>
+			<color name="background-selected" value="#00000026"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KComponentBase">
+			<color name="background" value="#ffffff"/>
+			<color name="border" value="#ffffff"/>
+			<color name="border-hover" value="#00000026"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KWeatherComponent" base="KComponentBase">
+		</style>
+		<style class="KDocerComponent" base="KComponentBase">
+		</style>
+		<style class="TemperatureLabel">
+			<font name="text" pointSize="15"/>
+			<color name="text" value="#00000099"/>
+			<font name="text-collapse" pointSize="10.5"/>
+			<color name="text-collapse" value="#00000099"/>
+		</style>
+		<style class="WeatherLabel">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000099"/>
+		</style>
+		<style class="CityLabel">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#00000066"/>
+		</style>
+		<style class="KWhatsNewTipsWidget">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#ffffff"/>
+			<color name="text-down" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="background" value="#ff4800cc"/>
+			<hint name="borderRadius" value="3"/>
+		</style>
+		<style class="KButtonWidget">
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+		<style class="KComponentCollapseBtn" base="KButtonWidget">
+		</style>
+		<style class="KButtonAreaWidget">
+			<color name="background-hover" value="#0000001a"/>
+			<color name="background-down" value="#00000026"/>
+			<color name="border" value="#0000001a"/>
+			<color name="border-hover" value="#00000000"/>
+			<color name="border-down" value="#00000000"/>
+			<color name="red-point" value="#cc4747"/>
+			<hint name="borderRadius" value="18"/>
+			<hint name="RenderHints" value="1"/>
+			<hint name="radius-red-point" value="3"/>
+			<hint name="offset-x-red-point" value="2"/>
+			<hint name="offset-y-red-point" value="0"/>
+		</style>
+		<style class="KStartPageLoginButton">
+			<font name="text" pointSize="9"/>
+			<color name="text" value="#424242cc"/>
+			<color name="text-hover" value="#424242cc"/>
+			<color name="text-down" value="#424242cc"/>
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#fafafa"/>
+			<color name="background-down" value="#f2f2f2"/>
+			<color name="border" value="#bbbbbb"/>
+			<color name="border-hover" value="#aaaaaa"/>
+			<color name="border-down" value="#808080"/>
+			<hint name="borderRadius" value="13"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KStartPageLineEditWidget">
+			<color name="border" value="#c5c5c5"/>
+			<color name="border-down" value="#aaaaaa"/>
+			<hint name="borderRadius" value="18"/>
+			<color name="background" value="#f8f8f8"/>
+			<color name="background-down" value="#ffffff"/>
+			<font name="text" pointSize="10"/>
+			<color name="text" value="#999999"/>
+			<color name="text-down" value="#424242"/>
+			<hint name="RenderHints" value="1"/>
+		</style>
+		<style class="KSearchLoadingWidget">
+			<color name="background" value="#75A0EC"/>
+			<hint name="borderRadius" value="1"/>
+		</style>
+		<!--KPromeStartPage-->
+		<!--KPromeNewDocs-->
+		<style class="KPromeNewDocsTab">
+			<font name="text" pointSize="10.5"/>
+			<font name="text-hover" pointSize="10.5"/>
+			<font name="text-selected" pointSize="10.5"/>
+			<color name="border-bottom-selected" value="#396cbf"/>
+			<color name="text" value="#FFFFFFCF"/>
+			<color name="text-hover" value="#FFFFFF"/>
+			<color name="text-selected" value="#FFFFFF"/>
+			<color name="background-hover" value="#d2e6fa"/>
+			<color name="background-down" value="#ffffff2f"/>
+		</style>
+		<style class="KPromeNewDocsTab-Mytpl" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#5087e5"/>
+		</style>
+		<style class="KPromeNewDocsTab-Document" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#5087e5"/>
+		</style>
+		<style class="KPromeNewDocsTab-Excel" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#47B347"/>
+		</style>
+		<style class="KPromeNewDocsTab-Presentation" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#F2733D"/>
+		</style>
+		<style class="KPromeNewDocsTab-Showtime" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#ed4b4c"/>
+		</style>
+		<style class="KPromeNewDocsTab-WPSH5" base="KPromeNewDocsTab">
+			<color name="background-hover" value="#ffffff1f"/>
+			<color name="background-down" value="#ffffff1f"/>
+			<color name="containerBkColor" value="#65799A"/>
+		</style>
+		<!--KPromeNewDocs-->
+		<style class="FileDialog">
+			<color name="background" value="#f5f7fa" />
+			<color name="title" value="#5789d9" />
+			<color name="text" value="#3e4759" />
+			<color name="background-hover" value="#d2e6fa" />
+			<color name="background-down" value="#c2daf2" />
+			<color name="border" value="#cccccc" />
+			<color name="border-hover" value="#70a0ee" />
+			<color name="border-down" value="#4373c0" />
+		</style>
+		<style class="KPromeHeaderBarShadowLineWidget">
+			<linearGradient name="border-top" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<radialGradient name="border-topleft" spread="pad" center="1,1" focal="1,1" radius="1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient name="border-topright" spread="pad" center="0,1" focal="0,1" radius="1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+		</style>
+		<style class="KPromeBrowserWidget">
+			<color name="background" value="#ebebeb"/>
+		</style>
+		<style class="KPromeBrowserLoginWidget">
+			<color name="title-text" value="#00000099"/>
+			<color name="promt-text" value="#00000066"/>
+			<font name="title-text" pointSize="18"/>
+			<font name="promt-text" pointSize="10"/>
+		</style>
+		<style class="KGuiderButton">
+			<linearGradient name="background" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#439BF8"/>
+				<color position="1" value="#4274FA"/>  
+			</linearGradient>
+			<linearGradient name="background-hover" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#7FBAFA"/>
+				<color position="1" value="#439BF8"/> 
+			</linearGradient>
+			<linearGradient name="background-down" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#4274FA"/>
+				<color position="1" value="#3165F0"/>  
+			</linearGradient>
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#ffffff"/>
+			<font name="text" pixelSize="22"/>
+			<hint name="borderRadius" value="25"/>
+			<hint name="roundFlags" value="15"/>
+		</style>
+		<style class="KGuiderButton-Side">
+			<color name="background" value="#ffffff"/>
+			<color name="background-hover" value="#fbfbfb"/>
+			<color name="background-down" value="#f3f3f3"/>
+			<color name="border" value="#b8babe"/>
+			<color name="text" value="#333333"/>
+			<color name="text-hover" value="#333333"/>
+			<color name="text-down" value="#333333"/>
+			<font name="text" pixelSize="22"/>
+			<hint name="borderRadius" value="25"/>
+			<hint name="roundFlags" value="15"/>
+		</style>
+		<style class="KPromeConfigGuiderDlg">
+			<color name="background" value="#ffffff"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="roundFlags" value="15"/>
+		</style>
+		<style class="KPromeShadowButton">
+			<linearGradient name="background" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#439BF8"/>
+				<color position="1" value="#4274FA"/>  
+			</linearGradient>
+			<linearGradient name="background-hover" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#7FBAFA"/>
+				<color position="1" value="#439BF8"/> 
+			</linearGradient>
+			<linearGradient name="background-down" spread="pad" start="0,0" end="1,0">
+				<color position="0" value="#4274FA"/>
+				<color position="1" value="#3165F0"/>  
+			</linearGradient>
+			<font name="text" pointSize="13"/>
+			<color name="text" value="#FFFFFF"/>
+			<color name="text-hover" value="#FFFFFF"/>
+			<color name="text-down" value="#FFFFFF"/>
+			<color name="shadow" value="#427AFA"/>
+			<hint name="shadow" value="1"/>
+			<hint name="shadow-Blur" value="25"/>
+			<hint name="roundFlags" value="15"/>
+		</style>
+		<style class="KPromeCrashPageButton">
+			<color name="background" value="#5087E5"/>
+			<color name="background-hover" value="#739FEA"/>
+			<color name="background-down" value="#4779CD"/>
+			<color name="text" value="#ffffff"/>
+			<color name="text-hover" value="#ffffff"/>
+			<color name="text-down" value="#ffffff"/>
+			<font name="text" pixelSize="14"/>
+			<hint name="borderRadius" value="4"/>
+			<hint name="roundFlags" value="15"/>
+		</style>
+		<style class="KMsgCenterActionButton" base="KIconButton"><!--通知栏设置图标背景-->
+			<color name="background" value="#00000000"/>
+			<color name="background-hover" value="#0000000f"/>
+			<color name="background-down" value="#00000026"/>
+			<hint name="borderRadius" value="4"/>
+		</style>
+	</theme>
+</shell>
